@@ -37,7 +37,7 @@ export const AdminDashboard = (props) => {
             Authorization: token,
           },
         });
-        const response2 = await axios.get("https://taskflow-ez1n.onrender.com//getMembers", {
+        const response2 = await axios.get("https://taskflow-ez1n.onrender.com/getMembers", {
           headers: {
             Authorization: token,
           },
