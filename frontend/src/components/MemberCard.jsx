@@ -13,7 +13,7 @@ export const MemberCard = ({ name, password, id }) => {
   const deleteMember = async (id) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/deleteMember",
+        "https://taskflow-ez1n.onrender.com/deleteMember",
         { id },
         {
           headers: {
@@ -28,7 +28,7 @@ export const MemberCard = ({ name, password, id }) => {
 
   const createTask = async (id) => {
     const response = await axios.post(
-      "http://localhost:3000/createTaskForMember",
+      "https://taskflow-ez1n.onrender.com/createTaskForMember",
       { title, description, id },
       {
         headers: { Authorization: token },

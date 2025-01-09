@@ -26,7 +26,7 @@ export const TaskCard = ({
   const updateProgress = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/updateProgress",
+        "https://taskflow-ez1n.onrender.com/updateProgress",
         { id },
         {
           headers: {
