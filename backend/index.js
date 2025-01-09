@@ -26,5 +26,5 @@ io.on("connection", (socket) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`cumming on port ${process.env.PORT}`);
+  console.log(`running on port ${process.env.PORT}`);
 });
