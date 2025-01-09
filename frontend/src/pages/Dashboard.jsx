@@ -9,7 +9,7 @@ export const Dashboard = (props) => {
   useEffect(() => {
     const getTasks = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/getTaskById", {
+        const response = await axios.get("https://taskflow-ez1n.onrender.com/getTaskById", {
           headers: {
             Authorization: token,
           },

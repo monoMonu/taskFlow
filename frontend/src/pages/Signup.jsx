@@ -12,7 +12,7 @@ export const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/signup", {
+      const response = await axios.post("https://taskflow-ez1n.onrender.com/signup", {
         name,
         email,
         password,

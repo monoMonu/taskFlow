@@ -20,7 +20,7 @@ export const AdminDashboard = (props) => {
 
   const createMember = async () => {
     const response = await axios.post(
-      "http://localhost:3000/createMember",
+      "https://taskflow-ez1n.onrender.com/createMember",
       { name, email },
       {
         headers: { Authorization: token },
@@ -32,12 +32,12 @@ export const AdminDashboard = (props) => {
   useEffect(() => {
     const getTasks = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/getAllTasks", {
+        const response = await axios.get("https://taskflow-ez1n.onrender.com/getAllTasks", {
           headers: {
             Authorization: token,
           },
         });
-        const response2 = await axios.get("http://localhost:3000/getMembers", {
+        const response2 = await axios.get("https://taskflow-ez1n.onrender.com//getMembers", {
           headers: {
             Authorization: token,
           },
